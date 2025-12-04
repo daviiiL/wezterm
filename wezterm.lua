@@ -7,7 +7,6 @@ config.font_size = 12
 config.colors = color_scheme
 config.window_close_confirmation = "NeverPrompt"
 config.freetype_load_target = "Light"
-config.front_end = "WebGpu"
 
 config.window_frame = {
 	font = wezterm.font({
