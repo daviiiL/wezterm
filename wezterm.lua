@@ -5,14 +5,15 @@ local color_scheme, window_frame = require("colors").color_scheme, require("colo
 
 config.font_size = 12
 config.colors = color_scheme
+config.window_close_confirmation = "NeverPrompt"
+config.freetype_load_target = "Light"
+config.front_end = "WebGpu"
 
 config.window_frame = {
 	font = wezterm.font({
 		family = "DepartureMono Nerd Font",
 	}),
 }
-
-config.window_close_confirmation = "NeverPrompt"
 
 for k, v in pairs(window_frame) do
 	config.window_frame[k] = v
@@ -29,7 +30,7 @@ wezterm.on("update-right-status", function(window, pane)
 	else
 		window:set_config_overrides({
 			font = wezterm.font("DepartureMono Nerd Font"),
-			font_size = 12,
+			font_size = 14,
 		})
 	end
 end)
