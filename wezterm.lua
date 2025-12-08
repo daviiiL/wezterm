@@ -29,7 +29,7 @@ wezterm.on("update-right-status", function(window, pane)
 	else
 		window:set_config_overrides({
 			font = wezterm.font("DepartureMono Nerd Font"),
-			font_size = 14,
+			font_size = 12,
 		})
 	end
 end)
