@@ -2,28 +2,28 @@
 -- colors.lua
 
 local color_scheme = {
-	foreground = "#e1e2e9",
+	foreground = "#e2e2e9",
 	background = "#111318",
 
-	cursor_bg = "#a5c8fe",
-	cursor_fg = "#00315d",
-	cursor_border = "#a5c8fe",
+	cursor_bg = "#aec6ff",
+	cursor_fg = "#112f60",
+	cursor_border = "#aec6ff",
 
-	selection_fg = "#00315d",
-	selection_bg = "#a5c8fe",
+	selection_fg = "#112f60",
+	selection_bg = "#aec6ff",
 
-	scrollbar_thumb = "#43474e",
+	scrollbar_thumb = "#44474f",
 
-	split = "#8d9199",
+	split = "#8e9099",
 
 	ansi = {
 		"#181818",
 		"#ffb4ab",
-		"#a5c8fe",
-		"#3b608f",
-		"#a5c8fe",
-		"#d9bde3",
-		"#bcc7dc",
+		"#aec6ff",
+		"#445e91",
+		"#aec6ff",
+		"#debcdf",
+		"#bfc6dc",
 		"#BAC2DE",
 	},
 	brights = {
@@ -37,30 +37,30 @@ local color_scheme = {
 		"#A6ADC8",
 	},
 
-	indexed = { [136] = "#d9bde3" },
-	compose_cursor = "#bcc7dc",
+	indexed = { [136] = "#debcdf" },
+	compose_cursor = "#bfc6dc",
 	copy_mode_active_highlight_bg = { Color = "#111318" },
 	copy_mode_active_highlight_fg = { AnsiColor = "Black" },
-	copy_mode_inactive_highlight_bg = { Color = "#a5c8fe" },
+	copy_mode_inactive_highlight_bg = { Color = "#aec6ff" },
 	copy_mode_inactive_highlight_fg = { AnsiColor = "White" },
 
-	quick_select_label_bg = { Color = "#bcc7dc" },
-	quick_select_label_fg = { Color = "#263141" },
+	quick_select_label_bg = { Color = "#bfc6dc" },
+	quick_select_label_fg = { Color = "#293041" },
 	quick_select_match_bg = { AnsiColor = "Navy" },
-	quick_select_match_fg = { Color = "#e1e2e9" },
+	quick_select_match_fg = { Color = "#e2e2e9" },
 
 	input_selector_label_bg = { AnsiColor = "Black" },
-	input_selector_label_fg = { Color = "#e1e2e9" },
+	input_selector_label_fg = { Color = "#e2e2e9" },
 
 	launcher_label_bg = { AnsiColor = "Black" },
-	launcher_label_fg = { Color = "#e1e2e9" },
+	launcher_label_fg = { Color = "#e2e2e9" },
 
 	tab_bar = {
 		background = "#111318",
 
 		active_tab = {
 			bg_color = "#282a2f",
-			fg_color = "#e1e2e9",
+			fg_color = "#e2e2e9",
 			intensity = "Normal",
 			underline = "None",
 			italic = false,
@@ -68,28 +68,28 @@ local color_scheme = {
 		},
 
 		inactive_tab = {
-			bg_color = "#1d2024",
-			fg_color = "#c3c6cf",
+			bg_color = "#1e1f25",
+			fg_color = "#c5c6d0",
 		},
 
 		inactive_tab_hover = {
-			bg_color = "#32353a",
-			fg_color = "#e1e2e9",
+			bg_color = "#33353a",
+			fg_color = "#e2e2e9",
 			italic = true,
 		},
 
 		new_tab = {
-			bg_color = "#1d2024",
-			fg_color = "#c3c6cf",
+			bg_color = "#1e1f25",
+			fg_color = "#c5c6d0",
 		},
 
 		new_tab_hover = {
-			bg_color = "#32353a",
-			fg_color = "#e1e2e9",
+			bg_color = "#33353a",
+			fg_color = "#e2e2e9",
 			italic = true,
 		},
 
-		inactive_tab_edge = "#8d9199",
+		inactive_tab_edge = "#8e9099",
 	},
 }
 
