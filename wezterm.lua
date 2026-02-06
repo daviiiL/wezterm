@@ -2,74 +2,69 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 config.font_size = 14
-config.color_scheme = "Catppuccin Mocha"
+config.color_scheme = "Oxocarbon Dark"
 config.window_close_confirmation = "NeverPrompt"
 config.freetype_load_target = "Light"
 
-local mocha = {
-	rosewater = "#f5e0dc",
-	flamingo = "#f2cdcd",
-	pink = "#f5c2e7",
-	mauve = "#cba6f7",
-	red = "#f38ba8",
-	maroon = "#eba0ac",
-	peach = "#fab387",
-	yellow = "#f9e2af",
-	green = "#a6e3a1",
-	teal = "#94e2d5",
-	sky = "#89dceb",
-	sapphire = "#74c7ec",
-	blue = "#89b4fa",
-	lavender = "#b4befe",
-	text = "#cdd6f4",
-	subtext1 = "#bac2de",
-	subtext0 = "#a6adc8",
-	overlay2 = "#9399b2",
-	overlay1 = "#7f849c",
-	overlay0 = "#6c7086",
-	surface2 = "#585b70",
-	surface1 = "#45475a",
-	surface0 = "#313244",
-	base = "#1e1e2e",
-	mantle = "#181825",
-	crust = "#11111b",
+-- Enable Wayland and GTK window decorations
+config.enable_wayland = true
+config.window_decorations = "INTEGRATED_BUTTONS | RESIZE"
+
+-- Oxocarbon color palette
+local oxocarbon = {
+	base00 = "#161616", -- background
+	base01 = "#262626", -- lighter background
+	base02 = "#393939", -- selection background
+	base03 = "#525252", -- comments
+	base04 = "#dde1e6", -- dark foreground
+	base05 = "#f2f4f8", -- default foreground
+	base06 = "#ffffff", -- light foreground
+	base07 = "#08bdba", -- cyan
+	base08 = "#3ddbd9", -- bright cyan
+	base09 = "#78a9ff", -- blue
+	base0A = "#ee5396", -- magenta
+	base0B = "#33b1ff", -- bright blue
+	base0C = "#ff7eb6", -- pink
+	base0D = "#42be65", -- green
+	base0E = "#be95ff", -- purple
+	base0F = "#82cfff", -- light blue
 }
 
 config.window_frame = {
 	font = wezterm.font({
 		family = "SauceCodePro Nerd Font Mono",
 	}),
-	active_titlebar_bg = mocha.base,
-	inactive_titlebar_bg = mocha.mantle,
+	active_titlebar_bg = oxocarbon.base00,
+	inactive_titlebar_bg = oxocarbon.base01,
 }
 
 config.colors = {
 	tab_bar = {
-		background = mocha.crust,
+		background = oxocarbon.base00,
 		active_tab = {
-			bg_color = mocha.surface2,
-			fg_color = mocha.text,
+			bg_color = oxocarbon.base02,
+			fg_color = oxocarbon.base05,
 			intensity = "Normal",
 			underline = "None",
 			italic = false,
 			strikethrough = false,
 		},
 		inactive_tab = {
-			bg_color = mocha.surface0,
-			fg_color = mocha.subtext1,
+			bg_color = oxocarbon.base01,
+			fg_color = oxocarbon.base03,
 		},
 		inactive_tab_hover = {
-			bg_color = mocha.surface1,
-			fg_color = mocha.text,
+			bg_color = oxocarbon.base02,
+			fg_color = oxocarbon.base04,
 			italic = false,
 		},
 		new_tab = {
-			bg_color = mocha.crust,
-			fg_color = mocha.text,
+			bg_color = oxocarbon.base00,
+			fg_color = oxocarbon.base05,
 		},
 		new_tab_hover = {
-			bg_color = mocha.mauve,
-			fg_color = mocha.crust,
+			bg_color = oxocarbon.base09,
+			fg_color = oxocarbon.base00,
 			italic = false,
 		},
 	},
