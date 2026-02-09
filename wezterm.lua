@@ -1,7 +1,8 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
+local user_config = require("user-config")
 
-config.font_size = 14
+config.font_size = user_config.font
 config.color_scheme = "Oxocarbon Dark"
 config.window_close_confirmation = "NeverPrompt"
 config.freetype_load_target = "Light"
